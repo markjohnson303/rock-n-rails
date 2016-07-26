@@ -10,4 +10,9 @@ class RecordsController < ApplicationController
 		render :show
 	end
 
+	def new
+		@record = Record.new
+		render :new
+	end
+
 end
