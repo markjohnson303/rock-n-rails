@@ -2,4 +2,7 @@
   <p>Title: <%= record.title %></p>
   <p>Artist: <%= record.artist %></p>
   <img src="<%= record.cover_art %>">
+  <br>
+  <!-- anchor tag that links to a show page -->
+  <%= link_to "Show page", record_path(record) %> 
 <% end %>

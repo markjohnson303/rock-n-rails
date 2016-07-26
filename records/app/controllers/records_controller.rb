@@ -5,4 +5,9 @@ class RecordsController < ApplicationController
 		#render :index
 	end
 
+	def show
+		@record = Record.find(params[:id])
+		render :show
+	end
+
 end
